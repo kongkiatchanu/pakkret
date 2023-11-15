@@ -354,7 +354,7 @@ function chart_forcast(id,aqi,name)
                         else if(value1.day_th_icon == 'th-dust-boy-05') dustboy_icon = 'th-dust-boy-05.363a1424';
                         color = value1.day_th_color;
                     }
-                    $('.anime_forecast_'+(i)).attr('src','https://pm2_5.nrct.go.th/img/'+ dustboy_icon +'.svg');
+                    $('.anime_forecast_'+(i)).attr('src','https://pm2_5.nrct.go.th/template/image/'+ dustboy_icon +'.svg');
                     // $('.card_forecast_'+(i+1)).css("background-color", "rgba(" + color + ",0.75)");
                     $('.date_forecast_'+(i)).html('วัน'+moment(value1.day_date).format('ddd'));
                     $('.pm25_forecast_'+(i)).html("PM<sub>2.5</sub> เฉลี่ย : <b>"+value1.day_avg_pm25+"</b> <small>(μg/m3)</small>");
