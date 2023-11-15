@@ -383,6 +383,7 @@ function chart_forcast(id,aqi,name)
                             }]
                         },
                         options: ({
+                            maintainAspectRatio: false,
                             scales: {
                                 xAxes: [{
                                     ticks: {
