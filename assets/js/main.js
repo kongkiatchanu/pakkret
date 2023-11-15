@@ -340,18 +340,18 @@ function chart_forcast(id,aqi,name)
                     $('.col_forecast').append(html);
                     if(aqi == 'us'){
                         if(value1.day_us_icon == 'us-dust-boy-01') dustboy_icon = 'us-dust-boy-01.5c5fb4bc';
-                        else if(value1.day_us_icon == 'us-dust-boy-02') dustboy_icon = 'us-dust-boy-02.4fc5182a';
-                        else if(value1.day_us_icon == 'us-dust-boy-03') dustboy_icon = 'us-dust-boy-03.690e1925';
-                        else if(value1.day_us_icon == 'us-dust-boy-04') dustboy_icon = 'us-dust-boy-04.2aa99ce2';
-                        else if(value1.day_us_icon == 'us-dust-boy-05') dustboy_icon = 'us-dust-boy-05.ab92ca6b';
-                        else if(value1.day_us_icon == 'us-dust-boy-06') dustboy_icon = 'us-dust-boy-06.c4b42d56';
+                        else if(value1.day_us_icon == 'us-dust-boy-02') dustboy_icon = 'us-dust-boy-02';
+                        else if(value1.day_us_icon == 'us-dust-boy-03') dustboy_icon = 'us-dust-boy-03';
+                        else if(value1.day_us_icon == 'us-dust-boy-04') dustboy_icon = 'us-dust-boy-04';
+                        else if(value1.day_us_icon == 'us-dust-boy-05') dustboy_icon = 'us-dust-boy-05';
+                        else if(value1.day_us_icon == 'us-dust-boy-06') dustboy_icon = 'us-dust-boy-06';
                         color = value1.day_us_color;
                     }else{
-                        if(value1.day_th_icon == 'th-dust-boy-01') dustboy_icon = 'th-dust-boy-01.8da76418';
-                        else if(value1.day_th_icon == 'th-dust-boy-02') dustboy_icon = 'th-dust-boy-02.79cc61b5';
-                        else if(value1.day_th_icon == 'th-dust-boy-03') dustboy_icon = 'th-dust-boy-03.3c43a928';
-                        else if(value1.day_th_icon == 'th-dust-boy-04') dustboy_icon = 'th-dust-boy-04.db9e51ae';
-                        else if(value1.day_th_icon == 'th-dust-boy-05') dustboy_icon = 'th-dust-boy-05.363a1424';
+                        if(value1.day_th_icon == 'th-dust-boy-01') dustboy_icon = 'th-dust-boy-01';
+                        else if(value1.day_th_icon == 'th-dust-boy-02') dustboy_icon = 'th-dust-boy-02';
+                        else if(value1.day_th_icon == 'th-dust-boy-03') dustboy_icon = 'th-dust-boy-03';
+                        else if(value1.day_th_icon == 'th-dust-boy-04') dustboy_icon = 'th-dust-boy-04';
+                        else if(value1.day_th_icon == 'th-dust-boy-05') dustboy_icon = 'th-dust-boy-05';
                         color = value1.day_th_color;
                     }
                     $('.anime_forecast_'+(i)).attr('src','https://pm2_5.nrct.go.th/template/image/'+ dustboy_icon +'.svg');
