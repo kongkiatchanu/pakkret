@@ -336,7 +336,7 @@ function chart_forcast(id,aqi,name)
         if(data.forecast_days.length != 0){
             $.each(data.forecast_days, function (i, value1) { 
                 if(i>0&&value1.length != 0){
-                    var html = '<div class="card_forecast card_forecast_'+(i)+' card shadow"><div class="title row m-0"><div class="col-3 d-flex justify-content-end align-items-center"><img class="anime_forecast anime_forecast_'+(i)+' shadow-drop-bottom" alt="pm2.5_icon" src=""></div><div class="col-9 d-flex flex-column justify-content-center align-items-center"><div class="date_forecast date_forecast_'+(i)+'"></div><div class="pm25_forecast pm25_forecast_'+(i)+'"></div></div></div><div class="chart" style="height:250px"><canvas id="chart_forcast_'+(i)+'" class="px-1"></canvas></div></div>';
+                    var html = '<div class="card_forecast card_forecast_'+(i)+' card shadow"><div class="title row m-0"><div class="col-3 d-flex justify-content-end align-items-center"><img class="anime_forecast anime_forecast_'+(i)+' shadow-drop-bottom" alt="pm2.5_icon" src="" style="width:40%"></div><div class="col-9 d-flex flex-column justify-content-center align-items-center"><div class="date_forecast date_forecast_'+(i)+'"></div><div class="pm25_forecast pm25_forecast_'+(i)+'"></div></div></div><div class="chart" style="height:200px"><canvas id="chart_forcast_'+(i)+'" class="px-1"></canvas></div></div>';
                     $('.col_forecast').append(html);
                     if(aqi == 'us'){
                         if(value1.day_us_icon == 'us-dust-boy-01') dustboy_icon = 'us-dust-boy-01.5c5fb4bc';
