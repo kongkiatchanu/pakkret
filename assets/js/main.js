@@ -333,6 +333,7 @@ function chart_forcast(id,aqi,name)
         $('.col_forecast').html('');
         const data_forcast=[],label_forcast=[],color_forcast=[];
         var index_data=0;
+        console.log(data);
         if(data.forecast_days.length != 0){
             $.each(data.forecast_days, function (i, value1) { 
                 if(i>0&&value1.length != 0){
