@@ -177,6 +177,7 @@ $(function () {
                                     $('.prophecy').hide();
                                 }else{
                                     $('.prophecy').show();
+                                }
                              });
                             
                             $('#popupDetail').show();
