@@ -171,6 +171,11 @@ $(function () {
                             // }
                             $('#popupDetail .card-body .anime img').attr("src", 'https://dev2.cmuccdc.org/template/image/' + dustboy_icon + '.svg');
                             // $('#popupDetail .card-body .anime img').attr("src", 'https://pm2_5.nrct.go.th/img/' + dustboy_icon + '.svg');
+                            //signoutz
+                             fetch('https://www-old.cmuccdc.org/api2/dustboy/forecast/'+id).then(function (response) {return response.json();}).then(function (data) {
+                                 console.log(data);
+                             });
+                            
                             $('#popupDetail').show();
                         });
                         //category
