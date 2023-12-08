@@ -208,6 +208,9 @@
                         <div class="card-footer">
                             <div class="row">
                                 <div class="weahter col-2 col-md-3 col-lg-3">
+                                    <div class="prophecy_load" style="display:none">
+                                        <img src="/assets/image/loader.gif">
+                                    </div>
                                     <div class="prophecy" data-toggle="tooltip" data-placement="right" title="พยากรณ์ค่าฝุ่น PM2.5"></div>
                                 </div>
                                 <div class="favorite col-8 col-md-6 col-lg-6 d-flex justify-content-center">
