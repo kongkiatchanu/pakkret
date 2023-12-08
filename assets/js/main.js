@@ -172,13 +172,15 @@ $(function () {
                             $('#popupDetail .card-body .anime img').attr("src", 'https://dev2.cmuccdc.org/template/image/' + dustboy_icon + '.svg');
                             // $('#popupDetail .card-body .anime img').attr("src", 'https://pm2_5.nrct.go.th/img/' + dustboy_icon + '.svg');
                             //signoutz
-                            $('.prophecy').hide();
+                             $('.prophecy').hide();
+                             $('.prophecy_load').show();
                              fetch('https://www-old.cmuccdc.org/api2/dustboy/forecast/'+value.id).then(function (response) {return response.json();}).then(function (data) {
                                 if(data.forecast_days.length == 0){
                                     $('.prophecy').hide();
                                 }else{
                                     $('.prophecy').show();
                                 }
+                                $('.prophecy_load').hide();
                              });
                             
                             $('#popupDetail').show();
